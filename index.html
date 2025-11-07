@@ -11,6 +11,8 @@
       max-width: 700px;
       color: #222;
       line-height: 1.5;
+      /* Increased base font size for better readability */
+      font-size: 16px; 
     }
 
     a {
@@ -33,7 +35,8 @@
 
     h1 {
       font-weight: 700;
-      font-size: 1.8rem;
+      /* Increased size from 1.8rem to 2rem */
+      font-size: 2rem; 
       margin-bottom: 0;
       text-transform: uppercase;
     }
@@ -48,15 +51,17 @@
       font-size: 1.1rem;
     }
 
-    .education-item, .project-item {
+    /* Added .experience-item styles */
+    .education-item, .project-item, .experience-item {
       margin-bottom: 15px;
     }
 
-    .education-item strong, .project-item strong {
+    .education-item strong, .project-item strong, .experience-item strong {
       font-weight: 700;
     }
 
-    .education-year {
+    /* Added .experience-year styles */
+    .education-year, .experience-year {
       float: right;
       color: #1a5c9a;
       font-weight: 500;
@@ -111,11 +116,6 @@
       font-size: 1rem;
       text-transform: uppercase;
     }
-
-    .leadership ul {
-      padding-left: 20px;
-      margin: 8px 0 0 0;
-    }
   </style>
 </head>
 <body>
@@ -135,19 +135,36 @@
     <div class="education-item">
       <span><strong>MIT Academy of Engineering</strong>, Pune, Maharashtra</span>
       <span class="education-year">2023–27</span><br/>
-      <span class="italic">Degree: BTech Computer Engineering (Pursuing)</span>
+      <span class="italic">BTech Computer Engineering (Pursuing)</span>
     </div>
     <div class="education-item">
       <span><strong>Dayanand Science College</strong>, Latur, Maharashtra</span>
       <span class="education-year">2022</span><br/>
-      <span class="italic">Degree: HSC (Percentage: 68.00)</span>
+      <span class="italic">HSC (Percentage: 68.00)</span>
     </div>
     <div class="education-item">
       <span><strong>Sant Goroba Kaka Vidyalaya</strong>, Saundana, Maharashtra</span>
       <span class="education-year">2018</span><br/>
-      <span class="italic">Degree: SSC (Percentage: 93.40)</span>
+      <span class="italic">SSC (Percentage: 93.40)</span>
     </div>
   </section>
+
+  <!-- THIS IS THE NEW SECTION -->
+  <section>
+    <h2>Relevant Experience & Training</h2>
+    <div class="experience-item">
+        <span><strong>Freelance Web Developer</strong> | Dighi, Pune</span>
+        <span class="experience-year">29 Aug 2025 – 12 Sept 2025</span><br/>
+        <p>Engineered a full-stack Hotel Management Website (PHP/MySQL) with a custom CMS for real-time booking and secure reporting; finalized and ready for deployment.</p>
+    </div>
+    <div class="experience-item">
+        <span><strong>Foundation Course on IR4.0 Technologies</strong> | TechSaksham (Microsoft & SAP CSR Initiative)</span>
+        <!-- Year moved to the right using the existing CSS class -->
+        <span class="experience-year">2024–2025</span><br/> 
+        <p>Completed intensive IR4.0 certification, gaining foundational skills in Cloud Computing, IoT, and Data Analytics.</p>
+    </div>
+  </section>
+  <!-- END OF NEW SECTION -->
 
   <section>
     <h2>Projects</h2>
@@ -191,17 +208,9 @@
   <section>
     <h2>Coding Profiles</h2>
     <ul>
-      <li>Codeforces – <a href="https://codeforces.com/profile/SatAlgo">SatAlgo</a></li>
+      <li>Codeforces – <a href="https://codeforces.com/profile/SatAlgo">SatAlgo</a> (305 problems solved)</li>
       <li>Codechef – <a href="https://www.codechef.com/users/explicitcode">explicitcode</a></li>
-      <li>Leetcode – <a href="https://leetcode.com/u/samAlgo/">SamAlgo</a></li>
-    </ul>
-  </section>
-
-  <section class="leadership">
-    <h2>Leadership Experience</h2>
-    <ul>
-      <li>Led and coordinated various college campus activities, demonstrating strong organizational and leadership skills.</li>
-      <li>Successfully managed teams, fostering collaboration and engagement among students while ensuring smooth execution of events.</li>
+      <li>Leetcode – <a href="https://leetcode.com/u/samAlgo/">SamAlgo</a> (204 problems solved)</li>
     </ul>
   </section>
 </body>
