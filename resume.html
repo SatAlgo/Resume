@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Satyam Gaikwad - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 700px;
+      color: #222;
+      line-height: 1.5;
+      /* Increased base font size for better readability */
+      font-size: 16px; 
+    }
+
+    a {
+      color: #0046bb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header a {
+      margin: 0 6px;
+    }
+
+    h1 {
+      font-weight: 700;
+      /* Increased size from 1.8rem to 2rem */
+      font-size: 2rem; 
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: #1a5c9a;
+      font-weight: 700;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 3px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+
+    /* Added .experience-item styles */
+    .education-item, .project-item, .experience-item {
+      margin-bottom: 15px;
+    }
+
+    .education-item strong, .project-item strong, .experience-item strong {
+      font-weight: 700;
+    }
+
+    /* Added .experience-year styles */
+    .education-year, .experience-year {
+      float: right;
+      color: #1a5c9a;
+      font-weight: 500;
+    }
+
+    .italic {
+      font-style: italic;
+      color: #555;
+    }
+
+    p {
+      margin: 4px 0 0 0;
+    }
+
+    .project-tech {
+      font-style: italic;
+      color: #555;
+    }
+
+    .tech-skills {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .tech-skills td:first-child {
+      font-weight: 700;
+      vertical-align: top;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    .tech-skills td {
+      padding-bottom: 8px;
+    }
+
+    ul {
+      margin: 8px 0 15px 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    h3 {
+      color: #1a5c9a;
+      font-weight: 700;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Satyam Gaikwad</h1>
+    <p>
+      <a>+91 7822099563</a> ∙
+      <a href="mailto:satyam.m.gaikwad@gmail.com">satyam.m.gaikwad@gmail.com</a> ∙
+      <a href="https://www.linkedin.com/in/satyam-gaikwad">LinkedIn</a> ∙
+      <a href="https://github.com/SatAlgo">GitHub</a> ∙
+      <a href="https://satyamgaikwad.netlify.app/">Portfolio</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="education-item">
+      <span><strong>MIT Academy of Engineering</strong>, Pune, Maharashtra</span>
+      <span class="education-year">2023–27</span><br/>
+      <span class="italic">BTech Computer Engineering (Pursuing)</span>
+    </div>
+    <div class="education-item">
+      <span><strong>Dayanand Science College</strong>, Latur, Maharashtra</span>
+      <span class="education-year">2022</span><br/>
+      <span class="italic">HSC (Percentage: 68.00)</span>
+    </div>
+    <div class="education-item">
+      <span><strong>Sant Goroba Kaka Vidyalaya</strong>, Saundana, Maharashtra</span>
+      <span class="education-year">2018</span><br/>
+      <span class="italic">SSC (Percentage: 93.40)</span>
+    </div>
+  </section>
+
+  <!-- THIS IS THE NEW SECTION -->
+  <section>
+    <h2>Relevant Experience & Training</h2>
+    <div class="experience-item">
+        <span><strong>Freelance Web Developer</strong> | Dighi, Pune</span>
+        <span class="experience-year">29 Aug 2025 – 12 Sept 2025</span><br/>
+        <p>Engineered a full-stack Hotel Management Website (PHP/MySQL) with a custom CMS for real-time booking and secure reporting; finalized and ready for deployment.</p>
+    </div>
+    <div class="experience-item">
+        <span><strong>Foundation Course on IR4.0 Technologies</strong> | TechSaksham (Microsoft & SAP CSR Initiative)</span>
+        <!-- Year moved to the right using the existing CSS class -->
+        <span class="experience-year">2024–2025</span><br/> 
+        <p>Completed intensive IR4.0 certification, gaining foundational skills in Cloud Computing, IoT, and Data Analytics.</p>
+    </div>
+  </section>
+  <!-- END OF NEW SECTION -->
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project-item">
+      <strong>Library Management System</strong> — <span class="project-tech">PHP, MySQL, JS, HTML/CSS</span> - 
+      <a href="https://www.linkedin.com/posts/satyam-gaikwad-27a7a724b_dbms-librarysystem-php-activity-7337518737010442240-dcdI">Project</a>
+      <p>Engineered a secure DBMS project for MITAOE Central Library using real data. Implemented role-based dashboards (Admin, Staff, Student), fine automation, real-time announcements, and complete staff management. Optimized SQL queries for performance and ensured secure access control.</p>
+    </div>
+
+    <div class="project-item">
+      <strong>Freelancing Platform (Fiverr Clone)</strong> — <span class="project-tech">MERN Stack, Stripe, WebSockets</span> - 
+      <a href="#">Project</a>
+      <p>Built a full-stack Fiverr clone with secure role-based access, JWT auth, Stripe payments, advanced search filters, and media upload via Cloudinary—demonstrating scalable app architecture and production-grade MERN practices.</p>
+    </div>
+
+    <div class="project-item">
+      <strong>Hotel Booking System</strong> — <span class="project-tech">PHP, MySQL, JS, HTML/CSS, Bootstrap 5, AJAX</span>
+      <p>Developed a dynamic, full-stack hotel booking platform with role-based access for users and admins. Users can browse rooms with filters, check live availability, manage bookings, and leave reviews. Admin panel enables full control over rooms, services, booking status, user moderation, and CMS-like content editing. Integrated AJAX-based interactivity, secure auth, and invoice generation. Based on a YT playlist, extended with advanced features including gallery management and banquet booking, along with improved UI/UX.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tech Skills</h2>
+    <table class="tech-skills">
+      <tr>
+        <td>Programming:</td>
+        <td>C++, Java, Python, C</td>
+      </tr>
+      <tr>
+        <td>Technologies:</td>
+        <td>HTML5, CSS3, Bootstrap, React.js, JavaScript (ES6+), Node.js, Express.js, MongoDB, Mongoose, Firebase, MySQL, PHP, Cloudinary, Stripe API, JWT, RESTful APIs, React Query, useReducer, WebSockets, AJAX</td>
+      </tr>
+      <tr>
+        <td>Other Tools:</td>
+        <td>Postman, Matlab, Tableau, GitHub</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Coding Profiles</h2>
+    <ul>
+      <li>Codeforces – <a href="https://codeforces.com/profile/SatAlgo">SatAlgo</a> (305 problems solved)</li>
+      <li>Codechef – <a href="https://www.codechef.com/users/explicitcode">explicitcode</a> ([Number] problems solved)</li>
+      <li>Leetcode – <a href="https://leetcode.com/u/samAlgo/">SamAlgo</a> (204 problems solved)</li>
+    </ul>
+  </section>
+</body>
+</html>
